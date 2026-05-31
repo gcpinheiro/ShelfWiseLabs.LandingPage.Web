@@ -1,0 +1,41 @@
+<svg width="272" height="58" viewBox="0 0 272 58" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="shelfwise-symbolic-title shelfwise-symbolic-desc">
+  <title id="shelfwise-symbolic-title">ShelfWise Labs</title>
+  <desc id="shelfwise-symbolic-desc">Logo simbólica da ShelfWise Labs unindo tempo de prateleira, embalagem, alimento, laboratório e curva de análise.</desc>
+  <defs>
+    <linearGradient id="symbolic-primary" x1="8" y1="8" x2="52" y2="50" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#102A20"/>
+      <stop offset="0.58" stop-color="#1B7F64"/>
+      <stop offset="1" stop-color="#63D7AA"/>
+    </linearGradient>
+    <linearGradient id="symbolic-soft" x1="17" y1="18" x2="43" y2="40" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#DFF7EB"/>
+      <stop offset="1" stop-color="#A7E8CF"/>
+    </linearGradient>
+  </defs>
+
+  <g aria-hidden="true">
+    <circle cx="30" cy="29" r="22.5" stroke="#D7E9DF" stroke-width="2"/>
+    <path d="M30 6.5C39.1 6.5 46.9 11.9 50.4 19.7" stroke="url(#symbolic-primary)" stroke-width="3.4" stroke-linecap="round"/>
+    <path d="M8.6 35.9C11.5 45 20 51.5 30 51.5" stroke="url(#symbolic-primary)" stroke-width="3.4" stroke-linecap="round"/>
+    <path d="M30 12.8L43.9 20.8V36.9L30 44.9L16.1 36.9V20.8L30 12.8Z" fill="#F7FBF8" stroke="#1B7F64" stroke-width="1.8"/>
+    <path d="M21.6 34.4C27.3 26 35 24 42.1 26.2" stroke="#163A2D" stroke-width="3" stroke-linecap="round"/>
+    <path d="M21.6 36.6C28.1 38.2 34.6 35.8 40.6 30" stroke="url(#symbolic-soft)" stroke-width="2.4" stroke-linecap="round"/>
+    <path d="M34.5 28.2C34.5 24.1 37.6 21.3 42.2 21.1C42 25.9 39 28.6 34.5 28.2Z" fill="#1B7F64"/>
+    <path d="M25.4 18.6H33.9" stroke="#1B7F64" stroke-opacity="0.34" stroke-width="1.8" stroke-linecap="round"/>
+    <path d="M24.3 22.5H30.4" stroke="#1B7F64" stroke-opacity="0.22" stroke-width="1.8" stroke-linecap="round"/>
+    <circle cx="21.7" cy="34.5" r="2.2" fill="#163A2D"/>
+    <circle cx="42.1" cy="26.2" r="2.5" fill="#63D7AA"/>
+    <path d="M50.4 19.7L53.2 14.8" stroke="#1B7F64" stroke-width="2" stroke-linecap="round"/>
+    <path d="M8.6 35.9L5.4 40.5" stroke="#1B7F64" stroke-width="2" stroke-linecap="round"/>
+  </g>
+
+  <text x="68" y="34" fill="#18372B" font-family="Aptos Display, Avenir Next, Trebuchet MS, Arial, sans-serif" font-size="28" font-weight="650" letter-spacing="-0.35">
+    ShelfWise
+  </text>
+  <g>
+    <rect x="68" y="39.5" width="49" height="12" rx="6" fill="#EAF6F0"/>
+    <text x="77" y="48.5" fill="#1B7F64" font-family="Aptos, Avenir Next, Trebuchet MS, Arial, sans-serif" font-size="8.5" font-weight="700" letter-spacing="1.55">
+      LABS
+    </text>
+  </g>
+</svg>
