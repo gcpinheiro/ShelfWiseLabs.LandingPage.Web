@@ -41,7 +41,7 @@
 
 .brand-logo {
   display: block;
-  width: min(188px, 44vw);
+  width: min(204px, 46vw);
   height: auto;
 }
 
@@ -293,7 +293,10 @@ h3 {
 .process-timeline p,
 .result-grid p,
 .pricing-card p,
-.client-card small {
+.client-card small,
+.scope-grid p,
+.factors-copy p,
+.quality-grid p {
   color: #536b61;
   font-size: 1rem;
   line-height: 1.68;
@@ -303,6 +306,17 @@ h3 {
   max-width: 690px;
   margin-top: 24px;
   font-size: clamp(1.06rem, 1.5vw, 1.28rem);
+}
+
+.brand-slogan {
+  max-width: 720px;
+  margin-top: 18px;
+  padding-left: 16px;
+  border-left: 3px solid #1b7f64;
+  color: #18372b;
+  font-size: clamp(1.02rem, 1.3vw, 1.18rem);
+  font-weight: 600;
+  line-height: 1.5;
 }
 
 .hero-actions {
@@ -491,7 +505,10 @@ h3 {
 .process-timeline article,
 .report-page,
 .client-card,
-.pricing-card {
+.pricing-card,
+.scope-grid article,
+.factor-board div,
+.quality-grid article {
   border: 1px solid #dfeae3;
   border-radius: 8px;
   background: #ffffff;
@@ -537,6 +554,106 @@ h3 {
 .deliverable-list div {
   display: grid;
   gap: 10px;
+}
+
+.scope-section {
+  background: #ffffff;
+}
+
+.scope-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 16px;
+}
+
+.scope-grid article {
+  display: grid;
+  gap: 16px;
+  align-content: start;
+  min-height: 360px;
+  padding: 24px;
+}
+
+.scope-grid h3,
+.quality-grid h3 {
+  min-height: 60px;
+}
+
+.scope-grid ul {
+  justify-content: flex-start;
+  margin-top: auto;
+}
+
+.factors-section {
+  display: grid;
+  grid-template-columns: minmax(0, 0.82fr) minmax(0, 1fr);
+  gap: clamp(32px, 6vw, 92px);
+  align-items: center;
+  background:
+    linear-gradient(135deg, rgb(238 247 242 / 0.94), rgb(255 255 255 / 0.96)),
+    #eef7f2;
+}
+
+.factors-copy {
+  display: grid;
+  gap: 18px;
+  max-width: 760px;
+}
+
+.factor-board {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+}
+
+.factor-board div {
+  position: relative;
+  display: grid;
+  grid-template-columns: 18px minmax(0, 1fr);
+  gap: 12px;
+  align-items: start;
+  min-height: 106px;
+  padding: 20px;
+}
+
+.factor-board span,
+.quality-grid span {
+  display: block;
+  width: 12px;
+  height: 12px;
+  margin-top: 5px;
+  border-radius: 999px;
+  background: #1b7f64;
+  box-shadow: 0 0 0 6px rgb(27 127 100 / 0.12);
+}
+
+.factor-board strong {
+  color: #18372b;
+  font-size: 1rem;
+  line-height: 1.45;
+}
+
+.quality-section {
+  background: #f8fbf9;
+}
+
+.quality-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 16px;
+}
+
+.quality-grid article {
+  display: grid;
+  grid-template-columns: 18px minmax(0, 1fr);
+  gap: 14px 16px;
+  align-content: start;
+  padding: 26px;
+}
+
+.quality-grid h3,
+.quality-grid p {
+  grid-column: 2;
 }
 
 ul {
@@ -947,7 +1064,8 @@ li,
 .client-card strong,
 .pricing-card strong,
 .plan-topline span,
-.plan-outcome span {
+.plan-outcome span,
+.factor-board strong {
   font-weight: 600;
 }
 
@@ -969,7 +1087,10 @@ h3,
 .process-timeline p,
 .result-grid p,
 .pricing-card p,
-.client-card small {
+.client-card small,
+.scope-grid p,
+.factors-copy p,
+.quality-grid p {
   color: #52675e;
 }
 
@@ -1102,7 +1223,8 @@ h3,
 @media (max-width: 1120px) {
   .hero,
   .method-section,
-  .report-section {
+  .report-section,
+  .factors-section {
     grid-template-columns: 1fr;
   }
 
@@ -1115,8 +1237,13 @@ h3,
   }
 
   .pricing-grid,
+  .quality-grid,
   .site-footer {
     grid-template-columns: 1fr;
+  }
+
+  .scope-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 }
 
@@ -1214,9 +1341,20 @@ h3,
   .deliverable-list article,
   .proof-table div,
   .process-timeline article,
+  .scope-grid,
+  .factor-board,
   .pricing-grid,
   .site-footer {
     grid-template-columns: 1fr;
+  }
+
+  .scope-grid article {
+    min-height: auto;
+  }
+
+  .scope-grid h3,
+  .quality-grid h3 {
+    min-height: auto;
   }
 
   ul {

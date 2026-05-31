@@ -1,6 +1,6 @@
 <header class="site-header">
   <a class="brand" href="#top" aria-label="ShelfWise Labs">
-    <img class="brand-logo" src="/shelfwiselabs-logo-symbolic.svg" alt="" />
+    <img class="brand-logo" src="/shelfwiselabs-logo-labmark.svg" alt="" />
   </a>
 
   <button
@@ -18,8 +18,8 @@
   <nav [class.open]="menuOpen()" aria-label="Navegação principal">
     <a href="#resultados" (click)="closeMenu()">Resultados</a>
     <a href="#servicos" (click)="closeMenu()">Serviços</a>
+    <a href="#escopo" (click)="closeMenu()">Escopo</a>
     <a href="#metodo" (click)="closeMenu()">Método</a>
-    <a href="#entrega" (click)="closeMenu()">Entrega</a>
     <a href="#clientes" (click)="closeMenu()">Clientes</a>
     <a href="#consultorias" (click)="closeMenu()">Consultorias</a>
   </nav>
@@ -59,6 +59,9 @@
       <p>
         A ShelfWise Labs entrega estudos de predição, análise laboratorial e simulação
         para orientar decisões de embalagem, umidade e armazenamento.
+      </p>
+      <p class="brand-slogan">
+        Nós medimos, modelamos e protegemos decisões críticas sobre vida de prateleira.
       </p>
       <div class="hero-actions">
         <a class="primary-action" href="#consultorias">Ver consultorias</a>
@@ -139,6 +142,10 @@
     <div class="section-heading">
       <p class="eyebrow">Como ajudamos</p>
       <h2>Serviços para transformar dados de alimentos em decisão.</h2>
+      <p>
+        A consultoria combina planejamento técnico, laboratório parceiro e modelagem para orientar
+        ganho de vida útil, redução de desperdício e maior previsibilidade antes de novos testes.
+      </p>
     </div>
 
     <div class="deliverable-list">
@@ -154,6 +161,51 @@
             }
           </ul>
         </article>
+      }
+    </div>
+  </section>
+
+  <section id="escopo" class="section scope-section">
+    <div class="section-heading">
+      <p class="eyebrow">Escopo técnico</p>
+      <h2>O estudo olha para produto, processo, embalagem e ambiente.</h2>
+      <p>
+        Shelf life não depende de uma variável isolada. Por isso, estruturamos o estudo para
+        enxergar o conjunto de fatores que impacta estabilidade, segurança e qualidade percebida.
+      </p>
+    </div>
+
+    <div class="scope-grid">
+      @for (scope of technicalScopes; track scope.title) {
+        <article>
+          <h3>{{ scope.title }}</h3>
+          <p>{{ scope.description }}</p>
+          <ul>
+            @for (point of scope.points; track point) {
+              <li>{{ point }}</li>
+            }
+          </ul>
+        </article>
+      }
+    </div>
+  </section>
+
+  <section class="section factors-section" aria-labelledby="factors-title">
+    <div class="factors-copy">
+      <p class="eyebrow">Fatores avaliados</p>
+      <h2 id="factors-title">As causas da perda de vida útil precisam aparecer no dado.</h2>
+      <p>
+        O projeto organiza hipóteses de estabilidade para que a empresa não dependa apenas de
+        tentativa e erro ao mudar formulação, embalagem ou condição de armazenamento.
+      </p>
+    </div>
+
+    <div class="factor-board">
+      @for (factor of shelfLifeFactors; track factor) {
+        <div>
+          <span></span>
+          <strong>{{ factor }}</strong>
+        </div>
       }
     </div>
   </section>
@@ -176,6 +228,28 @@
             <h3>{{ step.title }}</h3>
             <p>{{ step.description }}</p>
           </div>
+        </article>
+      }
+    </div>
+  </section>
+
+  <section class="section quality-section" aria-labelledby="quality-title">
+    <div class="section-heading">
+      <p class="eyebrow">Além da validade</p>
+      <h2 id="quality-title">Quando necessário, o estudo conversa com qualidade e conformidade.</h2>
+      <p>
+        A análise de vida útil pode revelar ajustes que passam por rotina de produção, documentação,
+        rotulagem ou gestão de riscos. A ShelfWise Labs posiciona essas necessidades no relatório
+        para que P&D e qualidade tenham o mesmo mapa de decisão.
+      </p>
+    </div>
+
+    <div class="quality-grid">
+      @for (service of qualityServices; track service.title) {
+        <article>
+          <span></span>
+          <h3>{{ service.title }}</h3>
+          <p>{{ service.description }}</p>
         </article>
       }
     </div>
@@ -282,17 +356,17 @@
 <footer class="site-footer">
   <div>
     <a class="brand footer-brand" href="#top" aria-label="ShelfWise Labs">
-      <img class="brand-logo" src="/shelfwiselabs-logo-symbolic.svg" alt="" />
+      <img class="brand-logo" src="/shelfwiselabs-logo-labmark.svg" alt="" />
     </a>
     <p>
-      Consultoria técnica para predição, análise laboratorial e simulação de shelf life
-      na indústria de alimentos.
+      Nós medimos, modelamos e protegemos decisões críticas sobre vida de prateleira.
     </p>
   </div>
 
   <nav aria-label="Links do rodapé">
     <a href="#resultados">Resultados</a>
     <a href="#servicos">Serviços</a>
+    <a href="#escopo">Escopo técnico</a>
     <a href="#clientes">Clientes</a>
     <a href="#consultorias">Consultorias</a>
   </nav>

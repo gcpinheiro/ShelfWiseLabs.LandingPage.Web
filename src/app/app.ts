@@ -55,24 +55,84 @@ export class App {
     },
   ] as const;
 
+  protected readonly technicalScopes = [
+    {
+      title: 'Plano de estudo de vida útil',
+      description:
+        'Definição do alimento, amostras, tempos de leitura, condições de armazenamento e variáveis críticas antes do laboratório.',
+      points: ['produto e lote', 'tempos de coleta', 'critérios de rejeição'],
+    },
+    {
+      title: 'Análises físico-químicas',
+      description:
+        'Organização das leituras que explicam estabilidade, textura e retenção de qualidade ao longo do tempo.',
+      points: ['umidade', 'pH/acidez', 'atividade de água'],
+    },
+    {
+      title: 'Microbiologia e segurança',
+      description:
+        'Acompanhamento de indicadores microbiológicos com laboratórios parceiros para reduzir incerteza sanitária.',
+      points: ['fungos e leveduras', 'contagem total', 'limites técnicos'],
+    },
+    {
+      title: 'Embalagem e armazenamento',
+      description:
+        'Comparação de barreiras, exposição à luz, temperatura, umidade ambiente e condições logísticas possíveis.',
+      points: ['barreira', 'temperatura', 'exposição'],
+    },
+  ] as const;
+
+  protected readonly shelfLifeFactors = [
+    'Matéria-prima e padronização do processo',
+    'Umidade, água livre e atividade de água',
+    'pH, acidez e estabilidade da formulação',
+    'Carga microbiana inicial e boas práticas',
+    'Tipo de embalagem, luz e barreira ao oxigênio',
+    'Temperatura, umidade e logística de armazenagem',
+  ] as const;
+
+  protected readonly qualityServices = [
+    {
+      title: 'Boas Práticas, POPs e rotina de controle',
+      description:
+        'Quando o estudo indicar risco operacional, conectamos as recomendações a práticas de produção, planilhas e controles diários.',
+    },
+    {
+      title: 'APPCC e pontos críticos',
+      description:
+        'A leitura de shelf life pode apoiar a identificação de perigos, pontos críticos e ações preventivas na cadeia produtiva.',
+    },
+    {
+      title: 'Rotulagem, alergênicos e ficha técnica',
+      description:
+        'O relatório pode levantar impactos técnicos de formulação, embalagem e conservação que precisam conversar com o produto final.',
+    },
+  ] as const;
+
   protected readonly process = [
     {
       index: '01',
-      title: 'Primeira leitura',
+      title: 'Diagnóstico inicial',
       description:
-        'Partimos da empresa, alimento e condições atuais para estimar onde está a maior alavanca técnica.',
+        'Partimos da empresa, alimento, formulação, embalagem e condições atuais para levantar hipóteses de ganho.',
     },
     {
       index: '02',
-      title: 'Experimento e curvas',
+      title: 'Plano experimental',
       description:
-        'Quando há laboratório, transformamos as medições em curvas comparáveis por tempo e componente.',
+        'Definimos amostras, tempos de análise, componentes acompanhados e critérios técnicos de interpretação.',
     },
     {
       index: '03',
-      title: 'Decisão priorizada',
+      title: 'Curvas e simulações',
       description:
-        'Simulamos o que vale testar primeiro e entregamos uma leitura objetiva de impacto esperado.',
+        'Transformamos medições e cenários em curvas comparáveis para indicar o que tende a aumentar ou reduzir shelf life.',
+    },
+    {
+      index: '04',
+      title: 'Recomendação aplicada',
+      description:
+        'Entregamos caminhos priorizados para embalagem, formulação, armazenamento, novo teste ou controle de qualidade.',
     },
   ] as const;
 
