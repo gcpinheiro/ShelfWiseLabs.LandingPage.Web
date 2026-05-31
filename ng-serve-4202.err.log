@@ -1,21 +1,13 @@
-[1m[31m[31mX [41;31m[[41;97mERROR[41;31m][0m [1mNG5002: Parser Error: Missing expected ) at column 24 in [menuOpen.update((open) => !open)] in C:\Users\gabri\Desktop\ShelfWiseLabs.LandingPage.Web\src\app\app.html@11:13[0m [1m[35m[plugin angular-compiler][0m
+[1m[31mERROR: Bad Request ("http://localhost:4202/").
+Header "host" with value "localhost:4202" is not allowed.
 
-    src/app/app.html:12:13:
-[37m      12 │     (click)="[32mmenuOpen.update((open) => !open)[37m"
-         ╵              [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+For more information, see https://angular.dev/best-practices/security#preventing-server-side-request-forgery-ssrf[39m[22m
+[1m[31m[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2339: Property 'duration' does not exist on type '{ readonly tag: "entrada"; readonly name: "Diagnóstico técnico"; readonly price: "a partir de R$ 3.900"; readonly description: "Leitura inicial do produto, variáveis críticas e cenários prováveis de ganho de shelf life."; readonly items: readonly [...]; readonly featured: false; } | { ...; } | { ...; }'.
+  Property 'duration' does not exist on type '{ readonly tag: "entrada"; readonly name: "Diagnóstico técnico"; readonly price: "a partir de R$ 3.900"; readonly description: "Leitura inicial do produto, variáveis críticas e cenários prováveis de ganho de shelf life."; readonly items: readonly [...]; readonly featured: false; }'.[0m [1m[35m[plugin angular-compiler][0m
 
-  Error occurs in the template of component App.
-
-    src/app/app.ts:5:15:
-[37m      5 │   templateUrl: [32m'./app.html'[37m,
-        ╵                [32m~~~~~~~~~~~~[0m
-
-
-[31mX [41;31m[[41;97mERROR[41;31m][0m [1mNG5002: Parser Error: Unexpected token ')' at column 32 in [menuOpen.update((open) => !open)] in C:\Users\gabri\Desktop\ShelfWiseLabs.LandingPage.Web\src\app\app.html@11:13[0m [1m[35m[plugin angular-compiler][0m
-
-    src/app/app.html:12:13:
-[37m      12 │     (click)="[32mmenuOpen.update((open) => !open)[37m"
-         ╵              [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+    src/app/app.html:256:27:
+[37m      256 │             <small>{{ plan.[32mduration[37m }}</small>
+          ╵                            [32m~~~~~~~~[0m
 
   Error occurs in the template of component App.
 
@@ -24,11 +16,12 @@
         ╵                [32m~~~~~~~~~~~~[0m
 
 
-[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2339: Property 'open' does not exist on type 'App'.[0m [1m[35m[plugin angular-compiler][0m
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2339: Property 'outcome' does not exist on type '{ readonly tag: "entrada"; readonly name: "Diagnóstico técnico"; readonly price: "a partir de R$ 3.900"; readonly description: "Leitura inicial do produto, variáveis críticas e cenários prováveis de ganho de shelf life."; readonly items: readonly [...]; readonly featured: false; } | { ...; } | { ...; }'.
+  Property 'outcome' does not exist on type '{ readonly tag: "entrada"; readonly name: "Diagnóstico técnico"; readonly price: "a partir de R$ 3.900"; readonly description: "Leitura inicial do produto, variáveis críticas e cenários prováveis de ganho de shelf life."; readonly items: readonly [...]; readonly featured: false; }'.[0m [1m[35m[plugin angular-compiler][0m
 
-    src/app/app.html:12:30:
-[37m      12 │     (click)="menuOpen.update(([32mopen[37m) => !open)"
-         ╵                               [32m~~~~[0m
+    src/app/app.html:267:26:
+[37m      267 │             <span>{{ plan.[32moutcome[37m }}</span>
+          ╵                           [32m~~~~~~~[0m
 
   Error occurs in the template of component App.
 
@@ -37,24 +30,12 @@
         ╵                [32m~~~~~~~~~~~~[0m
 
 [39m[22m
-[1m[31m[31mX [41;31m[[41;97mERROR[41;31m][0m [1mNG5002: Parser Error: Missing expected ) at column 24 in [menuOpen.update((open) => !open)] in C:\Users\gabri\Desktop\ShelfWiseLabs.LandingPage.Web\src\app\app.html@11:13[0m [1m[35m[plugin angular-compiler][0m
+[1m[31m[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2339: Property 'duration' does not exist on type '{ readonly tag: "entrada"; readonly name: "Diagnóstico técnico"; readonly price: "a partir de R$ 3.900"; readonly description: "Leitura inicial do produto, variáveis críticas e cenários prováveis de ganho de shelf life."; readonly items: readonly [...]; readonly featured: false; } | { ...; } | { ...; }'.
+  Property 'duration' does not exist on type '{ readonly tag: "entrada"; readonly name: "Diagnóstico técnico"; readonly price: "a partir de R$ 3.900"; readonly description: "Leitura inicial do produto, variáveis críticas e cenários prováveis de ganho de shelf life."; readonly items: readonly [...]; readonly featured: false; }'.[0m [1m[35m[plugin angular-compiler][0m
 
-    src/app/app.html:12:13:
-[37m      12 │     (click)="[32mmenuOpen.update((open) => !open)[37m"
-         ╵              [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
-
-  Error occurs in the template of component App.
-
-    src/app/app.ts:5:15:
-[37m      5 │   templateUrl: [32m'./app.html'[37m,
-        ╵                [32m~~~~~~~~~~~~[0m
-
-
-[31mX [41;31m[[41;97mERROR[41;31m][0m [1mNG5002: Parser Error: Unexpected token ')' at column 32 in [menuOpen.update((open) => !open)] in C:\Users\gabri\Desktop\ShelfWiseLabs.LandingPage.Web\src\app\app.html@11:13[0m [1m[35m[plugin angular-compiler][0m
-
-    src/app/app.html:12:13:
-[37m      12 │     (click)="[32mmenuOpen.update((open) => !open)[37m"
-         ╵              [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+    src/app/app.html:256:27:
+[37m      256 │             <small>{{ plan.[32mduration[37m }}</small>
+          ╵                            [32m~~~~~~~~[0m
 
   Error occurs in the template of component App.
 
@@ -63,11 +44,40 @@
         ╵                [32m~~~~~~~~~~~~[0m
 
 
-[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2339: Property 'open' does not exist on type 'App'.[0m [1m[35m[plugin angular-compiler][0m
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2339: Property 'outcome' does not exist on type '{ readonly tag: "entrada"; readonly name: "Diagnóstico técnico"; readonly price: "a partir de R$ 3.900"; readonly description: "Leitura inicial do produto, variáveis críticas e cenários prováveis de ganho de shelf life."; readonly items: readonly [...]; readonly featured: false; } | { ...; } | { ...; }'.
+  Property 'outcome' does not exist on type '{ readonly tag: "entrada"; readonly name: "Diagnóstico técnico"; readonly price: "a partir de R$ 3.900"; readonly description: "Leitura inicial do produto, variáveis críticas e cenários prováveis de ganho de shelf life."; readonly items: readonly [...]; readonly featured: false; }'.[0m [1m[35m[plugin angular-compiler][0m
 
-    src/app/app.html:12:30:
-[37m      12 │     (click)="menuOpen.update(([32mopen[37m) => !open)"
-         ╵                               [32m~~~~[0m
+    src/app/app.html:267:26:
+[37m      267 │             <span>{{ plan.[32moutcome[37m }}</span>
+          ╵                           [32m~~~~~~~[0m
+
+  Error occurs in the template of component App.
+
+    src/app/app.ts:5:15:
+[37m      5 │   templateUrl: [32m'./app.html'[37m,
+        ╵                [32m~~~~~~~~~~~~[0m
+
+[39m[22m
+[1m[31m[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2339: Property 'duration' does not exist on type '{ readonly tag: "entrada"; readonly name: "Diagnóstico técnico"; readonly price: "a partir de R$ 3.900"; readonly description: "Leitura inicial do produto, variáveis críticas e cenários prováveis de ganho de shelf life."; readonly items: readonly [...]; readonly featured: false; } | { ...; } | { ...; }'.
+  Property 'duration' does not exist on type '{ readonly tag: "entrada"; readonly name: "Diagnóstico técnico"; readonly price: "a partir de R$ 3.900"; readonly description: "Leitura inicial do produto, variáveis críticas e cenários prováveis de ganho de shelf life."; readonly items: readonly [...]; readonly featured: false; }'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/app.html:256:27:
+[37m      256 │             <small>{{ plan.[32mduration[37m }}</small>
+          ╵                            [32m~~~~~~~~[0m
+
+  Error occurs in the template of component App.
+
+    src/app/app.ts:5:15:
+[37m      5 │   templateUrl: [32m'./app.html'[37m,
+        ╵                [32m~~~~~~~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2339: Property 'outcome' does not exist on type '{ readonly tag: "entrada"; readonly name: "Diagnóstico técnico"; readonly price: "a partir de R$ 3.900"; readonly description: "Leitura inicial do produto, variáveis críticas e cenários prováveis de ganho de shelf life."; readonly items: readonly [...]; readonly featured: false; } | { ...; } | { ...; }'.
+  Property 'outcome' does not exist on type '{ readonly tag: "entrada"; readonly name: "Diagnóstico técnico"; readonly price: "a partir de R$ 3.900"; readonly description: "Leitura inicial do produto, variáveis críticas e cenários prováveis de ganho de shelf life."; readonly items: readonly [...]; readonly featured: false; }'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/app.html:267:26:
+[37m      267 │             <span>{{ plan.[32moutcome[37m }}</span>
+          ╵                           [32m~~~~~~~[0m
 
   Error occurs in the template of component App.
 

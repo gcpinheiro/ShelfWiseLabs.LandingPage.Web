@@ -9,69 +9,79 @@
     type="button"
     aria-label="Abrir menu"
     [attr.aria-expanded]="menuOpen()"
-    (click)="menuOpen.update((open) => !open)"
+    (click)="toggleMenu()"
   >
     <span></span>
     <span></span>
     <span></span>
   </button>
 
-  <nav [class.open]="menuOpen()" aria-label="Navegacao principal">
-    <a href="#resultados" (click)="menuOpen.set(false)">Resultados</a>
-    <a href="#servicos" (click)="menuOpen.set(false)">Servicos</a>
-    <a href="#metodo" (click)="menuOpen.set(false)">Metodo</a>
-    <a href="#entrega" (click)="menuOpen.set(false)">Entrega</a>
+  <nav [class.open]="menuOpen()" aria-label="Navegação principal">
+    <a href="#resultados" (click)="closeMenu()">Resultados</a>
+    <a href="#servicos" (click)="closeMenu()">Serviços</a>
+    <a href="#metodo" (click)="closeMenu()">Método</a>
+    <a href="#entrega" (click)="closeMenu()">Entrega</a>
+    <a href="#clientes" (click)="closeMenu()">Clientes</a>
+    <a href="#consultorias" (click)="closeMenu()">Consultorias</a>
   </nav>
 
-  <a class="header-cta" href="#contato">Avaliar produto</a>
+  <a class="header-cta" href="#consultorias">Solicitar estudo</a>
 </header>
 
 <main id="top">
   <section class="hero" aria-labelledby="hero-title">
     <div class="hero-visual" aria-hidden="true">
-      <video autoplay muted loop playsinline preload="metadata" class="lab-video">
+      <video
+        autoplay
+        muted
+        loop
+        playsinline
+        preload="metadata"
+        poster="https://assets.mixkit.co/videos/4719/4719-thumb-720-1.jpg"
+        class="lab-video"
+      >
         <source
-          src="https://videos.pexels.com/video-files/8533368/8533368-uhd_2560_1440_25fps.mp4"
+          src="https://assets.mixkit.co/videos/4719/4719-1080.mp4"
           type="video/mp4"
         />
       </video>
       <div class="video-wash"></div>
       <div class="lab-grid"></div>
       <div class="floating-formula formula-a">SL(t) = f(aw, T, embalagem)</div>
-      <div class="floating-formula formula-b">dU/dt -> retencao de umidade</div>
-      <div class="floating-formula formula-c">proxy aceitacao &gt; 50 pts</div>
+      <div class="floating-formula formula-b">dU/dt -> retenção de umidade</div>
+      <div class="floating-formula formula-c">proxy aceitação &gt; 50 pts</div>
       <div class="sample sample-one"></div>
       <div class="sample sample-two"></div>
     </div>
 
     <div class="hero-copy">
-      <p class="eyebrow">Shelf-life intelligence como servico</p>
-      <h1 id="hero-title">Aumente shelf life com decisao tecnica.</h1>
+      <p class="eyebrow">Shelf-life intelligence como serviço</p>
+      <h1 id="hero-title">Aumente shelf life com decisão técnica.</h1>
       <p>
-        A ShelfWise Labs entrega estudos de predicao, analise laboratorial e simulacao
-        para orientar decisoes de embalagem, umidade e armazenamento.
+        A ShelfWise Labs entrega estudos de predição, análise laboratorial e simulação
+        para orientar decisões de embalagem, umidade e armazenamento.
       </p>
       <div class="hero-actions">
-        <a class="primary-action" href="#contato">Solicitar diagnostico</a>
+        <a class="primary-action" href="#consultorias">Ver consultorias</a>
         <a class="secondary-action" href="#resultados">Ver resultados esperados</a>
       </div>
     </div>
 
-    <aside class="proof-panel" aria-label="Exemplo de resultado tecnico">
+    <aside class="proof-panel" aria-label="Exemplo de resultado técnico">
       <div class="proof-header">
         <span>Estudo exemplo</span>
-        <strong>Pao de forma tradicional</strong>
+        <strong>Pão de forma tradicional</strong>
       </div>
 
       <div class="main-metric">
         <small>ganho estimado</small>
         <strong>+4 dias</strong>
-        <span>baseline laboratorial vs. simulacao ShelfWise</span>
+        <span>baseline laboratorial vs. simulação ShelfWise</span>
       </div>
 
       <div class="chart-card">
         <div class="chart-top">
-          <span>Curva de aceitacao proxy</span>
+          <span>Curva de aceitação proxy</span>
           <small>D0-D12</small>
         </div>
         <svg viewBox="0 0 520 220" role="img" aria-label="Curvas comparativas de shelf life">
@@ -98,8 +108,8 @@
     </aside>
   </section>
 
-  <section class="trust-strip" aria-label="Publicos atendidos">
-    <span>Servico tecnico para</span>
+  <section class="trust-strip" aria-label="Públicos atendidos">
+    <span>Serviço técnico para</span>
     @for (item of trustedBy; track item) {
       <strong>{{ item }}</strong>
     }
@@ -108,10 +118,10 @@
   <section id="resultados" class="section results-section">
     <div class="section-heading">
       <p class="eyebrow">Resultados que o cliente compra</p>
-      <h2>O entregavel e clareza tecnica, nao acesso a mais uma ferramenta.</h2>
+      <h2>O entregável é clareza técnica, não acesso a mais uma ferramenta.</h2>
       <p>
-        ShelfWise Labs e a empresa e o servico. A entrega para o cliente e um
-        diagnostico com curvas, tendencias e cenarios recomendados para priorizar decisoes.
+        ShelfWise Labs é a empresa e o serviço. A entrega para o cliente é um
+        diagnóstico com curvas, tendências e cenários recomendados para priorizar decisões.
       </p>
     </div>
 
@@ -129,7 +139,7 @@
   <section id="servicos" class="section services-section">
     <div class="section-heading">
       <p class="eyebrow">Como ajudamos</p>
-      <h2>Servicos para transformar dados de alimentos em decisao.</h2>
+      <h2>Serviços para transformar dados de alimentos em decisão.</h2>
     </div>
 
     <div class="deliverable-list">
@@ -151,11 +161,11 @@
 
   <section id="metodo" class="section method-section">
     <div class="method-copy">
-      <p class="eyebrow">Metodo</p>
-      <h2>Da amostra ao cenario recomendado.</h2>
+      <p class="eyebrow">Método</p>
+      <h2>Da amostra ao cenário recomendado.</h2>
       <p>
-        Comecamos com predicao quando ainda nao ha laboratorio. Quando existem medicoes reais,
-        estruturamos o baseline e simulamos alternativas tecnicas sobre ele.
+        Começamos com predição quando ainda não há laboratório. Quando existem medições reais,
+        estruturamos o baseline e simulamos alternativas técnicas sobre ele.
       </p>
     </div>
 
@@ -175,38 +185,119 @@
   <section id="entrega" class="section report-section">
     <div class="report-visual" aria-hidden="true">
       <div class="report-page">
-        <span>Relatorio ShelfWise Labs</span>
-        <strong>Recomendacao: embalagem de maior barreira + 22 C</strong>
+        <span>Relatório ShelfWise Labs</span>
+        <strong>Recomendação: embalagem de maior barreira + 22 °C</strong>
         <div class="mini-bars">
           <i style="--bar: 48%"></i>
           <i style="--bar: 78%"></i>
           <i style="--bar: 62%"></i>
           <i style="--bar: 88%"></i>
         </div>
-        <p>Tendencia: aumento de shelf life</p>
+        <p>Tendência: aumento de shelf life</p>
       </div>
     </div>
 
     <div class="report-copy">
       <p class="eyebrow">Entrega final</p>
-      <h2>Um estudo que P&D, qualidade e negocio conseguem discutir juntos.</h2>
+      <h2>Um estudo que P&D, qualidade e negócio conseguem discutir juntos.</h2>
       <p>
-        O resultado pode apoiar decisoes sobre embalagem, formulacao, condicao de
+        O resultado pode apoiar decisões sobre embalagem, formulação, condição de
         armazenamento e necessidade de novo teste laboratorial. Sempre como indicador
-        tecnico proxy, sem prometer validacao sensorial definitiva.
+        técnico proxy, sem prometer validação sensorial definitiva.
       </p>
     </div>
   </section>
 
-  <section id="contato" class="cta-section">
-    <div>
-      <p class="eyebrow">Projeto piloto</p>
-      <h2>Quer descobrir quais variaveis podem aumentar o shelf life do seu produto?</h2>
+  <section id="clientes" class="section clients-section" aria-labelledby="clients-title">
+    <div class="section-heading">
+      <p class="eyebrow">Clientes e segmentos</p>
+      <h2 id="clients-title">Empresas que precisam transformar dados técnicos em decisão.</h2>
       <p>
-        Traga um alimento, uma dor de shelf life e os dados que voce ja tem. A gente
-        estrutura o diagnostico e indica os proximos cenarios.
+        A ShelfWise Labs atende times de P&D, qualidade, laboratório e inovação que precisam
+        reduzir incerteza antes de novos testes, mudanças de embalagem ou ajustes de processo.
       </p>
     </div>
-    <a class="primary-action" href="mailto:contato@shelfwiselabs.example">Conversar com ShelfWise Labs</a>
+
+    <div class="client-carousel" aria-label="Carrossel automático de clientes">
+      <div class="client-track">
+        @for (client of clients; track client.name) {
+          <article class="client-card">
+            <span>{{ client.initials }}</span>
+            <strong>{{ client.name }}</strong>
+            <small>{{ client.segment }}</small>
+          </article>
+        }
+        @for (client of clients; track client.name + '-duplicate') {
+          <article class="client-card" aria-hidden="true">
+            <span>{{ client.initials }}</span>
+            <strong>{{ client.name }}</strong>
+            <small>{{ client.segment }}</small>
+          </article>
+        }
+      </div>
+    </div>
+  </section>
+
+  <section id="consultorias" class="section pricing-section" aria-labelledby="pricing-title">
+    <div class="section-heading">
+      <p class="eyebrow">Consultorias</p>
+      <h2 id="pricing-title">Planos para diagnóstico, laboratório e simulação.</h2>
+      <p>
+        Valores de referência para contratação inicial. O escopo final depende do alimento,
+        número de amostras, quantidade de variáveis e necessidade de acompanhamento laboratorial.
+      </p>
+    </div>
+
+    <div class="pricing-grid">
+        @for (plan of pricingPlans; track plan.name) {
+        <article class="pricing-card" [class.featured]="plan.featured">
+          <div class="plan-topline">
+            <span>{{ plan.tag }}</span>
+            <small>{{ plan.duration }}</small>
+          </div>
+          <div class="plan-heading">
+            <h3>{{ plan.name }}</h3>
+            <p>{{ plan.description }}</p>
+          </div>
+          <div class="plan-price">
+            <small>a partir de</small>
+            <strong>{{ plan.price }}</strong>
+          </div>
+          <div class="plan-outcome">
+            <span>{{ plan.outcome }}</span>
+          </div>
+          <ul>
+            @for (item of plan.items; track item) {
+              <li>{{ item }}</li>
+            }
+          </ul>
+          <a class="secondary-action" href="mailto:contato@shelfwiselabs.example">
+            Solicitar proposta
+          </a>
+        </article>
+      }
+    </div>
   </section>
 </main>
+
+<footer class="site-footer">
+  <div>
+    <a class="brand footer-brand" href="#top" aria-label="ShelfWise Labs">
+      <span>SW</span>
+      <strong>ShelfWise Labs</strong>
+    </a>
+    <p>
+      Consultoria técnica para predição, análise laboratorial e simulação de shelf life
+      na indústria de alimentos.
+    </p>
+  </div>
+
+  <nav aria-label="Links do rodapé">
+    <a href="#resultados">Resultados</a>
+    <a href="#servicos">Serviços</a>
+    <a href="#clientes">Clientes</a>
+    <a href="#consultorias">Consultorias</a>
+  </nav>
+
+  <small>© 2026 ShelfWise Labs. Indicadores técnicos proxy, não validação sensorial definitiva.</small>
+</footer>
