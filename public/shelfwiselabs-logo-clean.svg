@@ -1,0 +1,27 @@
+<svg width="256" height="56" viewBox="0 0 256 56" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="shelfwise-clean-title shelfwise-clean-desc">
+  <title id="shelfwise-clean-title">ShelfWise Labs</title>
+  <desc id="shelfwise-clean-desc">Proposta de logo clean e simbólica para ShelfWise Labs.</desc>
+  <defs>
+    <linearGradient id="clean-gradient" x1="9" y1="13" x2="47" y2="43" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#163A2D"/>
+      <stop offset="1" stop-color="#1B7F64"/>
+    </linearGradient>
+  </defs>
+
+  <g stroke-linecap="round" stroke-linejoin="round">
+    <path d="M13 35C20.2 20.8 33.4 16.5 45 22" stroke="url(#clean-gradient)" stroke-width="4.2"/>
+    <path d="M13 35C23.4 38.8 34.8 35.7 45 25" stroke="#163A2D" stroke-width="3"/>
+    <path d="M35.2 23.6C35.2 18.8 38.9 15.4 44.4 15.2C44.1 20.8 40.7 24.1 35.2 23.6Z" fill="#1B7F64"/>
+    <path d="M25.8 18.4L29.2 11.8" stroke="#A7E8CF" stroke-width="2.4"/>
+    <path d="M31.2 31.8L37.8 39.8" stroke="#A7E8CF" stroke-width="2.4"/>
+    <circle cx="13" cy="35" r="3.2" fill="#163A2D"/>
+    <circle cx="45" cy="22" r="3.2" fill="#1B7F64"/>
+  </g>
+
+  <text x="66" y="33" fill="#18372B" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="27" font-weight="650" letter-spacing="-0.4">
+    ShelfWise
+  </text>
+  <text x="66" y="47" fill="#1B7F64" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="10" font-weight="650" letter-spacing="2.6">
+    LABS
+  </text>
+</svg>
